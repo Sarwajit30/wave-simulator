@@ -12,6 +12,7 @@
         .dark-mode {
             --background: #1a1a1a;
             --text: white;
+            --primary: #2e1896
         }
 
         body {
@@ -24,11 +25,8 @@
             transition: all 0.3s;
         }
 
-        .wave-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin: 20px 0;
+        .wave-container.dark-mode {
+            border: 4px solid #1e0698;
         }
 
         .wave-input {
